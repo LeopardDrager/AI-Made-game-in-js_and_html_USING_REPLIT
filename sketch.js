@@ -21,8 +21,15 @@ let restartButton;
 
 // set up the neural network
 if (AUTOMATION_ON) {
-  //TODO neral network
+  //TODO neural network
+  let m0 = new Matrix(2, 3, [
+    [2, 1, -1],
+    [4, 3, 0]
+  ]);
+  m0.randomWeights();
+  console.table (m0.data);
 }
+
 function setup() {
   createCanvas(500, 500);
   x = 250;
